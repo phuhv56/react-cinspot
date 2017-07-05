@@ -6,7 +6,7 @@ export class Post extends React.Component {
       return (
          <div className="row">
             <div className="col s12 m12">
-               <div className="card">
+               <div className="card medium light-blue lighten-4">
                   <div className="card-image">
                      <img src={this.props.src} />
                      <span className="card-title">{this.props.title}</span>
@@ -16,7 +16,6 @@ export class Post extends React.Component {
               I am convenient because I require little markup to use effectively.</p>
                   </div>
                   <div className="card-action">
-                     <a href="#">This is a link</a>
                   </div>
                </div>
             </div>
