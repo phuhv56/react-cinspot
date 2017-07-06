@@ -6,7 +6,7 @@ export class Post extends React.Component {
       return (
          <div className="row">
             <div className="col s12 m12">
-               <div className="card medium light-blue lighten-4">
+               <div className="card medium">
                   <div className="card-image">
                      <img src={this.props.src} />
                      <span className="card-title">{this.props.title}</span>
