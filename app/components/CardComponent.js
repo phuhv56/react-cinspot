@@ -10,7 +10,7 @@ export class Card extends React.Component {
       return (
          <div className="row">
             <div className="col s12 m12">
-               <div className="card blue-grey lighten-5">
+               <div className="card">
                   <div className="card-content">
                      <span className="card-title">ADD SPOT</span>
                      <div className="row">
