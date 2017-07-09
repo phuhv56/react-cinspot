@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Icon, Row, Input} from 'react-materialize';
+import '../assets/js/materialized_initialize';
+
 const style = {
    marginLeft: '10px'
 }
