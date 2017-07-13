@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/js/materialized_initialize';
 
 const style = {
    marginLeft: '10px'
