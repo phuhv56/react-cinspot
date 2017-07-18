@@ -11,7 +11,8 @@ export class PostList extends React.Component {
             <div>
                 {
                     data.map((todo)=> {
-                        return <Post todo={todo} key={todo.id} remove={remove}/>;
+                        {/* return <Post todo={todo} key={todo.id} remove={remove}/>; */}
+                        console.log(todo);
                     })
                 }
             </div>

@@ -1,4 +1,4 @@
-import todos from './todoReducer';
+import {todos} from './todoReducer';
 import {combineReducers} from 'redux';
 
 

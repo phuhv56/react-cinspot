@@ -29,7 +29,7 @@ const toDos = [
     }
 ]
 
-export default function todos(state = {data: toDos, loading: "loading..."}, action){
+export function todos(state = {data: toDos, loading: "loading..."}, action){
     switch (action.type) {
         case 'SHOW_ALL':
             return {
