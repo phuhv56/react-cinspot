@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class Post extends React.Component {
 
@@ -55,10 +56,10 @@ export class Post extends React.Component {
 }
 
 Post.propTypes = {
-    todo: React.PropTypes.shape({
-        title: React.PropTypes.string.isRequired,
-        reponsible: React.PropTypes.string.isRequired,
-        description: React.PropTypes.string.isRequired
+    todo: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        reponsible: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
     })
 };
 

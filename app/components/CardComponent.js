@@ -1,6 +1,7 @@
 import React from 'react';
-import '../assets/js/materialized_initialize';
-
+import {findDOMNode} from 'react-dom';
+// import '../assets/js/materialized_initialize';
+import $ from 'jquery';
 const style = {
    marginLeft: '10px'
 }
