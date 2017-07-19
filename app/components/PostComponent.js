@@ -10,7 +10,8 @@ export class Post extends React.Component {
 
     removeTodo(index) {
         console.log('post removeTodo ' + index);
-        this.props.removeTodo(index);
+        console.log(this.props.remove);
+        this.props.remove(index);
     }
 
    render() {
@@ -31,7 +32,7 @@ export class Post extends React.Component {
 
         let id = this.props.todo.id;
       return (
-         <div className="row">
+        <div className="row">
             <div className="col s12 m12">
                <div className="card hoverable">
                   <div className="card-content">

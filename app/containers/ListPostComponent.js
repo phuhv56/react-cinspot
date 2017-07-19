@@ -9,9 +9,13 @@ const mapStateToProps = (state) => {
   };
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    remove: (index) => {dispatch(removeTodo(index))}
+  }
+}
+
 export default connect(
     mapStateToProps,
-  {
-    remove: removeTodo
-  }
+    mapDispatchToProps
 )(PostList)

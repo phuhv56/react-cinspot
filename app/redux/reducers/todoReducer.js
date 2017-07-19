@@ -49,7 +49,7 @@ export function todos(state = {data: toDos, loading: "loading..."}, action){
         case 'REMOVE_TODO':
             return {
                 ...state,
-                data: state.data.filter((e)=> e.id != action.todo.id)
+                data: state.data.filter((e)=> e.id != action.index)
             }
         default:
             return state;
