@@ -46,7 +46,7 @@ export class Post extends React.Component {
                   </div>
                   <div className="card-action">
                       <a onClick={this.removeTodo.bind(this, id)} className="waves-effect waves-light btn red lighten-2">  
-                          <i className="material-icons">delete</i> Delete
+                          <i className="material-icons left">delete</i> Delete
                     </a>
                   </div>
                </div>
