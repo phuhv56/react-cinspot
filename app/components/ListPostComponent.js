@@ -5,8 +5,8 @@ export class PostList extends React.Component {
         super(props);
     }
     render() {
-        const {todos: {data, loading}, remove} = this.props;
-        console.log(data);
+        const {todos: {data, loading}, remove} = this.props
+        console.log(data)
         console.log(remove)
         return (
             <div>

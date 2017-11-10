@@ -7,5 +7,4 @@ export const crashReporter = store => next => action => {
         console.error(err);
         console.groupEnd('crashReporter');
     }
-
 }
