@@ -2,19 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PostList from "../containers/ListPostComponent";
 import Card from "../containers/CardComponent";
+import { todos } from "../redux/actions/index";
 
 export class App extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    const {todos: {data, loading}, add} = this.props;
-    console.log(data);
-    console.log(remove)
-
+    const {add} = this.props;
+    console.log(add)
     return (
       <div>
-        <Card todo={todos} add={add}/>
+        <Card add={add}/>
         <PostList />
       </div>
     );

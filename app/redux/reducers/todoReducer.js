@@ -44,12 +44,14 @@ export function todos(state = {data: toDos, loading: "loading..."}, action){
         case 'ADD_TODO':
             return {
                 ...state,
-                data: state.data.push(action.todo)
+                data: state.data.push(action.todo),
+                loading: 'loaded'
             }
         case 'REMOVE_TODO':
             return {
                 ...state,
-                data: state.data.filter((e)=> e.id != action.index)
+                data: state.data.filter((e)=> e.id != action.index),
+                loading: 'loaded'
             }
         default:
             return state;
