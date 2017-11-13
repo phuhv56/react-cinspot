@@ -9,11 +9,9 @@ export class App extends React.Component {
     super(props);
   }
   render() {
-    const {add} = this.props;
-    console.log(add)
     return (
       <div>
-        <Card add={add}/>
+        <Card />
         <PostList />
       </div>
     );

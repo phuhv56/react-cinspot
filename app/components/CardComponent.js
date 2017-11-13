@@ -15,15 +15,17 @@ export class Card extends React.Component {
 
     createNewTodo(e) {
         e.preventDefault()
+        var id = 1;
+        if(this.props.todos.data.length > 0) {
+            id = this.props.todos.data[this.props.todos.data.length-1].id;
+        }
         let todo = {
-            id:  1,
+            id:  id + 1,
             title: this.refs.todoName.value,
             reponsible: this.refs.todoReponsible.value,
             description: this.refs.todoDescription.value,
             priority: parseInt(this.refs.todoPriority.value)
         }
-        console.log(todo);
-        console.log(this.props.add)
         this.props.add(todo)
     }
 

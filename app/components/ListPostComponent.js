@@ -5,13 +5,11 @@ export class PostList extends React.Component {
         super(props);
     }
     render() {
-        const {todos: {data, loading}, remove} = this.props
-        console.log(data)
-        console.log(remove)
+        const {todos, remove} = this.props;
         return (
             <div>
                 {
-                    data.map((todo)=> {
+                    todos.data.map((todo)=> {
                          return <Post todo={todo} key={todo.id} remove={remove}/>; 
                     })
                 }

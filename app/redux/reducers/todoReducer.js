@@ -35,16 +35,17 @@ export function todos(state = {data: toDos, loading: "loading..."}, action){
             return {
                 ...state,
                 loading: 'loaded'
-            };
+            }
         case 'LOADING':
             return {
                 ...state,
                 loading: 'loading...'
-            };
+            }
         case 'ADD_TODO':
+            state.data.push(action.todo);
             return {
                 ...state,
-                data: state.data.push(action.todo),
+                data: state.data,
                 loading: 'loaded'
             }
         case 'REMOVE_TODO':
